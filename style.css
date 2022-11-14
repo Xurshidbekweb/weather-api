@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: url('https://source.unsplash.com/1600x1200/?landscape');
+  /* overflow-y: hidden; */
+}
+.container {
+  width: 30%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #000000d0;
+  color: white;
+  margin: 16% auto;
+  padding-left: 2rem;
+  border-radius: 7px;
+  padding: 1.6rem 0rem 2rem 2rem;
+}
+.searchblock input {
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  width: 80%;
+  height: 30px;
+  font-size: 16px;
+  
+}
+.searchblock {
+  width: 83%;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+.searchblock button {
+  border-radius: 50%;
+  height: 1.8rem;
+  width: 1.9rem;
+  cursor: pointer;
+  background-color: rgb(61, 58, 58);
+  border: none;
+}
+.searchblock i {
+  font-size: 18px;
+}
+.weather-grade {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.weather-grade i {
+    font-size: 37px;
+}
+#cloud {
+    font-size: 20px;
+}
+.celcius {
+    font-size: 30px;
+    font-weight: normal;
+}
+.footer h3 {
+    font-weight: normal;
+}
+
+
+/* media */
+
+@media (max-width: 900px) {
+  .container {
+    width: 50%;
+  }
+}
+@media (max-width: 555px) {
+  .container {
+    width: 70%;
+  }
+}
+@media (max-width: 410px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: 85%;
+  }
+  .searchblock button {
+    height: 1.6rem;
+    width: 1.7rem;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: 89%;
+  }
+  .searchblock button {
+    height: 1.6rem;
+    width: 1.7rem;
+  }
+}
